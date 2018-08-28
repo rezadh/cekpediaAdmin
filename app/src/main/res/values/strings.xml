@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">cekpediaAdmin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="kategori">
+        <item>masjid</item>
+        <item>hotel</item>
+        <item>wisata</item>
+        <item>rumah sakit</item>
+        <item>restoran</item>
+        <item>supermarket</item>
+        <item>sekolah</item>
+        <item>transportasi</item>
+        <item>spbu</item>
+        <item>apotek</item>
+        <item>bidan</item>
+
+
+    </string-array>
+    <string name="hello_world">gambar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Delete</string>
+</resources>

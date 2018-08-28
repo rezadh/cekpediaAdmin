@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.cekpediaadmin.Activity.MasjidActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0288D1" />
+
+        <SearchView
+            android:id="@+id/cari"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFF"
+            android:background="@drawable/search_layout"
+            android:drawableLeft="@drawable/ic_search"
+            android:queryHint="apa yang anda cari ?"
+            android:iconifiedByDefault="false"/>
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listviewmasjid"
+            android:layout_margin="4dp"
+            android:padding="8dp"
+            android:visibility="visible">
+            <!--android:layout_marginBottom="?android:attr/actionBarSize"-->
+        </ListView>
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="16dp"-->
+            <!--android:background="#FFF"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/recycler_view_masjid">-->
+        <!--</android.support.v7.widget.RecyclerView>-->
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#FFF"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:id="@+id/reult_list_masjid">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
